@@ -1,0 +1,52 @@
+/* navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Boja pozadine navbara */
+  padding: 10px;
+  color: #fff; /* Boja teksta */
+}
+
+.loginRegister {
+  display: flex;
+  align-items: center;
+}
+
+.linkNavbar {
+  margin-right: 10px;
+  color: #fff; /* Boja linka */
+  text-decoration: none;
+}
+
+.link-title,
+.link-title-name {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.profile-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; 
+  object-fit: cover; 
+  margin-right: 10px;
+}
+
+
+
+.margin-space {
+  flex-grow: 1;  
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  
+}
+
+.title-sideBar {
+  margin-right: 0; 
+}

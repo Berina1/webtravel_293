@@ -1,0 +1,43 @@
+.content-box {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 50px auto;
+  }
+  
+  .users-box {
+    width: 70%;
+    padding: 20px;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+  
+  .mainpulate-with-users-box {
+    width: 25%;
+    padding: 20px;
+  }
+  
+  .delete-user-box,
+  .edit-user-box {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  

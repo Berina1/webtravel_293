@@ -1,0 +1,228 @@
+/* variables */
+/* :root {
+  /* colors 
+  --primary-color: #f44336;
+  --primary-color-dark: color(#f44336 shade(12%));
+  --primary-color-tint: color(#f44336 tint(70%));
+  --secondary-color: #222;
+  --secodnary-color-dark: color(#222 shade(12%));
+  --secondary-color-tint: color(#222 tint(70%));
+} */
+
+
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-blue: rgb(0, 0, 255);
+  --secondary-orange: #f44336;
+
+  --text-primary-light: rgb(70, 70, 70);
+  --text-primary-dark: white;
+
+  --text-secondary-light: rgb(70, 70, 70);
+  --text-secondary-dark: rgb(160, 160, 160);
+
+  --bg-primary-light: white;
+  --bg-primary-dark: #222;
+
+  --bg-secondary-light: #EEEEEE;  
+  --bg-secondary-dark: #313131;
+
+  --bg-navbar-light: rgb(104, 104, 255);
+  --bg-navbar-dark: rgb(29, 29, 58);
+
+  --primary-color-dark: color(#f44336 shade(12%));
+}
+
+.light-theme {
+  --text-primary: var(--text-primary-light);
+  --text-secondary: var(--text-secondary-light);
+  --bg-primary: var(--bg-primary-light);
+  --bg-secondary: var(--bg-secondary-light);
+  --bg-navbar: var(--bg-navbar-light);
+}
+
+.dark-theme {
+  --text-primary: var(--text-primary-dark);
+  --text-secondary: var(--text-secondary-dark);
+  --bg-primary: var(--bg-primary-dark);
+  --bg-secondary: var(--bg-secondary-dark);
+  --bg-navbar: var(--bg-navbar-dark);
+}
+
+.App {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+::placeholder {
+  background-color: var(--bg-primary);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--bg-primary);
+  border-radius: 10px;
+}
+
+/* Handle on hover*/
+::-webkit-scrollbar-thumb:hover {
+  background-color:	#F19CBB;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.titleR {
+  font-weight: bold;
+  margin-bottom: 8px;
+  letter-spacing: 2.5px;
+  font-size: 40px;
+  color: var(--text-primary);
+  padding-top: 60px;
+
+}
+
+.itemsR {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: max-content;
+  height: 70%;
+  width:40%;
+}
+
+.inputFormR {
+  height: 36px;
+  background: inherit;
+  border: none;
+  border-bottom: 1px solid;
+  color: inherit;
+
+
+}
+
+.inputFormR:focus {
+  outline: none;
+  border-width: 2px;
+  margin-bottom: -1px;
+  border-color: var(--primary-color);
+}
+
+.buttonR {
+  width: 80%;
+  height: 36px;
+  margin-top: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  background: var(--secondary-orange);
+  box-shadow: 2px 2px 2px var(--primary-color-dark);
+  text-align: center;
+  background-color:	#F19CBB;
+
+}
+button:focus {
+  outline: none;
+}
+
+button:active {
+  outline: none;
+  background: var(--primary-color-dark);
+}
+
+.formR {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fieldR {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+}
+
+.labelFormR {
+  order: -1;
+  padding-left: 5px;
+  transition: all 0.3s ease-in;
+  transform: translateY(20px);
+  pointer-events: none;
+  font-size: 19px;
+  letter-spacing: 2px;
+}
+
+.labelFormValueR {
+  order: -1;
+  padding-left: 5px;
+  transition: all 0.3s ease-in;
+  transform: translateY(-2px);
+  pointer-events: none;
+  font-size: 19px;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+}
+
+.inputFormR:focus + .labelFormR {  
+  transform: translateY(-2px);
+  font-size: 95%;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+
+}
+
+.errorR {
+  color: var(--secondary-orange);
+  padding: 3px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.otherR {
+  width: 80%;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.linkR {
+  text-decoration: none;
+  color: var(--text-primary);
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}

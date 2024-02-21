@@ -1,0 +1,89 @@
+.main-div-write {
+  display: flex;
+  flex-direction: column;
+  height: 74vh;
+  margin: 5em;
+  align-items: center;
+}
+
+.title-write {
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 1em;
+  color: rgb(9, 35, 71);
+}
+
+.button-write {
+  height: 36px;
+  margin-top: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  background-color: #F19CBB;
+  box-shadow: 2px 2px 2px var(--primary-color-dark);
+  width: 40em;
+}
+
+.button-write:focus {
+  outline: none;
+}
+
+.button-write:active {
+  outline: none;
+  background: var(--primary-color-dark);
+}
+
+.input-write {
+  width: 40em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  height: 36px;
+  background: inherit;
+  border: none;
+  border-bottom: 1px solid;
+  color: inherit;
+}
+
+.input-write:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.select-write {
+  width: 40em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  height: 36px;
+  border: none;
+  border-bottom: 1px solid;
+  color: inherit;
+  background-color: var(--bg-primary);
+}
+
+.image-text {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  letter-spacing: 0.05em;
+}
+
+.error-write {
+  color: red;
+  margin-top: 1em;
+  letter-spacing: 0.07em;
+}
+
+@media only screen and (max-width: 560px) {
+  .input-write {
+    width: 20em;
+  }
+
+  .button-write {
+    width: 20em;
+  }
+
+  .select-write {
+    width: 20em;
+  }
+}

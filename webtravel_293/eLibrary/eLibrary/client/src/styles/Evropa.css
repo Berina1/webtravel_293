@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+  .landing-container {
+    background-color: var(--bg-primary);
+  }
+  
+  .header-toggle-buttons button {
+    display: block;
+    position: fixed;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    padding: 5px 15px;
+    border: 2px solid var(--text-primary);
+    cursor: pointer;
+    margin-top: -7px;
+  }
+
+  .container1 {
+    background-color: var(--bg-secondary);
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+    border: 2px solid var(--text-primary);
+  }
+  
+  .heading1 {
+    color: var(--text-primary);
+  }
+  
+  .heading2 {
+    color: var(--text-secondary);
+  }
+  
+  .heading3 {
+    color: var(--primary-blue);
+  }
+  
+  .heading4 {
+    color: var(--secondary-blue);
+  }
+  
+  .home-title {
+    font-size: 4em;
+    letter-spacing: 0.15em;
+    text-align: center;
+    margin-top: 0.5em;
+    width: flex;
+  }
+
+
+
+  .search {
+    color: rgb(9, 35, 71);
+    text-decoration: rgb(9, 35, 71);
+    border: 0;
+    background-image: url("../../public/search-icon-png-9986.png");
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    outline: none;
+    width: 20%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 1.5px;
+    margin-left: 1000px;
+    transition: 0.25s;
+    background-color: var(--bg-primary);
+    border-color: var(--bg-secondary);
+    margin-bottom: 7em;
+    margin-top: -4em;
+  }
+  
+  .search:hover {
+    border-color: #F19CBB;
+  }
+  
+  .search:focus {
+    width: 25%;
+    border-color: #F19CBB;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .search {
+      width: 15em;
+    }
+  
+    .search:focus {
+      width: 20em;
+    }
+  }
+  
+  .logo{
+    width:10%;
+    padding-top: 10px;
+  }
+  @media only screen and (max-width: 400px) {
+    .home-title {
+      font-size: 3em;
+    }
+  
+    .search {
+      width: 10em;
+    }
+  
+    .search:focus {
+      width: 15em;
+    }
+  }

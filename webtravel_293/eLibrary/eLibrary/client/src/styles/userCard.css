@@ -1,0 +1,57 @@
+
+.card-flex {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.card-box-user {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.title-box-user {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  text-align: center;
+}
+
+.description-box-user {
+  padding: 10px;
+}
+
+.id-text-card-user,
+.desc-text-card-user,
+.status-text-card-user {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.status-text-card-user {
+  color: #27ae60;
+}
+
+.status-text-card-user::before {
+  content: 'Status: ';
+  font-weight: bold;
+}
+
+.role-text-card-user {
+  color: #e74c3c;
+}
+
+.role-text-card-user::before {
+  content: 'Role: ';
+  font-weight: bold;
+}

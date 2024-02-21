@@ -1,0 +1,78 @@
+.recomendation-box-menu {
+  margin-bottom: 1em;
+  border: 1.5px solid var(--bg-secondary);
+}
+
+.recomendation-box-menu:hover {
+  border-color: var(--secondary-orange);
+}
+
+.content-menu {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.img-menu {
+  height: 6em;
+  width: 4em;
+}
+
+.paragrph-menu {
+  background-color: var(--bg-secondary);
+  width: 20em;
+  height: 6em;
+  word-wrap: break-word;
+  overflow: hidden;
+  padding: 0.5em;
+}
+
+.link-menu {
+  text-decoration: none;
+  color: var(--primary-text);
+}
+
+.recomendation-title-menu {
+  padding: 0.5em;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5em;
+}
+
+.secondary-title-menu {
+  padding: 0.2em;
+  padding-left: 0.5em;
+  margin-bottom: 0.2em;
+  letter-spacing: 0.08em;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 510px) {
+  .paragrph-menu {
+    background-color: var(--bg-secondary);
+    width: 15em;
+    height: 4em;
+    word-wrap: break-word;
+    overflow: hidden;
+    padding: 0.5em;
+  }
+
+  .img-menu {
+    height: 4em;
+    width: 3em;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .paragrph-menu {
+    background-color: var(--bg-secondary);
+    width: 80%;
+    height: 4em;
+    word-wrap: break-word;
+    overflow: hidden;
+    padding: 0.5em;
+  }
+
+  .img-menu {
+    height: 4em;
+    width: 20%;
+  }
+}

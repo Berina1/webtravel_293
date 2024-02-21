@@ -1,0 +1,72 @@
+.card-flex {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.card-box-trip {
+  margin: 3vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1.5px solid var(--bg-secondary);
+}
+
+.card-box-trip:hover {
+  border: 1.5px solid  #F19CBB;;
+}
+
+.title-box-trip {
+  text-align: center;
+  padding: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 22em;
+  
+}
+
+.image-box-trip-img {
+  display: flex;
+  height: 15em;
+  width: 11em;
+}
+
+.description-box-trip {
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+  border: 1.5px solid;
+  border-color: var(--bg-secondary);
+  width: 11em;
+  height: 15em;
+  width: 11em;
+  overflow: hidden;
+}
+
+.description-box-trip > p {
+  margin-left: 5px;
+}
+
+.link-card-trip {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.desc-text-card-trip {
+  word-wrap: break-word;
+  padding: 0.2em;
+  color: var(--text-primary);
+}
+
+@media only screen and (max-width: 400px) {
+  .image-box-trip-img {
+    height: 12em;
+    width: 8em;
+  }
+
+  .description-box-trip {
+    height: 12em;
+    width: 8em;
+  }
+}
