@@ -1,1 +1,1 @@
-# webtravel_293
+Ova web aplikacija za turističku agenciju omogućava korisnicima (admin i user) jednostavno upravljanje aktuelnim putovanjima. Admin ima pristup dodavanju novih korisnika, upravljanju putovanjima i pregledu postavljenih pitanja. Korisnici mogu pretraživati putovanja, postavljati pitanja i prijavljivati se na putovanja. Frontend je izrađen u Reactu, dok se backend oslanja na Node.js. Baza podataka je kreirana u MySQL sa nazivom "dbtravel_293".
